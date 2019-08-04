@@ -39,7 +39,7 @@
 #### 選擇要標註的影片
 [Google drive 下載連結 需要要求權限](https://drive.google.com/drive/u/2/folders/17Q1iPxzFqPdqgBEmM-UsBOuUG3jNJzlz)
 ####
-### [標注工作狀況](https://docs.google.com/spreadsheets/d/1HCeAVAgSzXgvFgp8n0pveacWBxs7ugrcq120C-VNq1Q)
+### [標注工作狀況 若選好影片請先至上面填寫自己要標記](https://docs.google.com/spreadsheets/d/1HCeAVAgSzXgvFgp8n0pveacWBxs7ugrcq120C-VNq1Q)
 ### 影片列表
 #### 小於30cm
  - 紅外線(26.5cm)
@@ -98,7 +98,7 @@ PRE-DEFINED CLASS FILE 為預先定義的label檔案 蝦子範例請見 classes.
 ```console
 python3 labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
 ```
-### 開啟先選擇輸出label資料夾(與輸入資料夾分開)
+### 開啟先選擇輸出label資料夾(非常建議與輸入資料夾分開)
 ![](./figs/labelImg3.png)
 ### 開啟後畫面
 ![](./figs/labelImg2.png)
@@ -110,12 +110,29 @@ python3 labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
 ![](./figs/labelImg4.png)
 ![](./figs/labelImg5.png)
 ![](./figs/labelImg6.png)
+### 分別標記`1000張有蝦子`及`200張單純背景`
 ### 最後將 輸出label及原resize影像 分開壓縮成zip檔
-resize影像資料夾 重新命名為 `wXh` w和h代表寬X高  
-label資料夾則重新命名成`水質種類``張數`_`label`_`標記人英文名縮寫`
+- resize影像資料夾 重新命名為 `wXh` w和h代表寬X高  
+- label資料夾則重新命名成`水質種類``張數`_`label`_`標記人英文名縮寫`
+- 無蝦子圖片獨立一個資料夾 名字為 `noShrimp`
+
 ex.   
-若輸入資料夾 為尺寸256*256的照片 重新命名為`256X256`  
-label資料夾 如果為標記黃褐色水質1000張 名字為 `brown1000_label_CK`
+- 若圖片輸入資料夾 為尺寸256*256的照片 重新命名為`256X256`  
+- label資料夾 如果為標記黃褐色水質1000張標記人為志剛 名字為 `labels_CK`
+### 將已標記資料合併起來(若有一開始分開放)
+SOURCE_PATH 為原影像資料夾 LABELS_PATH 為標記資料夾
+
+```console
+python3 merge.py --source_path [SOURCE_PATH] --labels_path [LABELS_PATH]
+```
+
+ 會將已標記圖片與標記檔案一起放在標記資料夾中
+
+### 最後檔案結構
+- 原影片檔案名稱
+   - 高X寬
+   - labels_名字縮寫
+### 最後壓縮成`zip檔` 交給實驗室負責人  並回到[線上試算表](https://docs.google.com/spreadsheets/d/1HCeAVAgSzXgvFgp8n0pveacWBxs7ugrcq120C-VNq1Q)回報
 
 範例標記
 
