@@ -1,10 +1,10 @@
-需求軟體
+## 若有任何文題 直接在 Slack 的標記 channel提出
+## 需求軟體
 ---
 - Python 3
 - opencv2
 - labelImg
 
-工具
 將黃老師提供資料做標註
 ----------------
 ## 按照可見距離
@@ -135,8 +135,16 @@ python3 merge.py --source_path [SOURCE_PATH] --labels_path [LABELS_PATH]
 ### 最後壓縮成`zip檔` 交給實驗室負責人  並回到[線上試算表](https://docs.google.com/spreadsheets/d/1HCeAVAgSzXgvFgp8n0pveacWBxs7ugrcq120C-VNq1Q)回報
 
 範例標記
-
--------
+![](./figs/exampleLabels1.png)
+![](./figs/exampleLabels2.png)
+![](./figs/exampleLabels3.png)
+![](./figs/exampleLabels4.png)
+![](./figs/exampleLabels5.png)
+![](./figs/exampleLabels6.png)
+![](./figs/exampleLabels7.png)
+![](./figs/exampleLabels8.png)
+![](./figs/exampleLabels9.png)
+![](./figs/exampleLabels10.png)
 #### DEMO 可用
  - 清澈
     - 13_10_R_180814150238.avi
