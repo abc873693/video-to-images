@@ -135,16 +135,28 @@ python3 merge.py --source_path [SOURCE_PATH] --labels_path [LABELS_PATH]
 ### 最後壓縮成`zip檔` 交給實驗室負責人  並回到[線上試算表](https://docs.google.com/spreadsheets/d/1HCeAVAgSzXgvFgp8n0pveacWBxs7ugrcq120C-VNq1Q)回報
 
 範例標記
+像是左上角的只有眼睛就不用標註
 ![](./figs/exampleLabels1.png)
 ![](./figs/exampleLabels2.png)
+上面稍微被數字擋住還是可以標記
 ![](./figs/exampleLabels3.png)
+左上角有尾巴可以標雖然不清楚
 ![](./figs/exampleLabels4.png)
+左上過不明顯的尾巴就不用標因為顏色太接近
 ![](./figs/exampleLabels5.png)
+畫面因為錄影品質不佳導致有殘影不要標註 在下一張是正常情況
 ![](./figs/exampleLabels6.png)
 ![](./figs/exampleLabels7.png)
+右上角只有一點點也不用標
+![](./figs/exampleLabels11.png)
+右邊稍微被水珠擋道沒關係
+![](./figs/exampleLabels10.png)
+其他為正常影像
 ![](./figs/exampleLabels8.png)
 ![](./figs/exampleLabels9.png)
-![](./figs/exampleLabels10.png)
+
+### 整體上還是看自己評估不用想太多有問題群組直接問
+
 #### DEMO 可用
  - 清澈
     - 13_10_R_180814150238.avi
