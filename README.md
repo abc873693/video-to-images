@@ -1,7 +1,7 @@
 ## 若有任何文題 直接在 Slack 的標記 channel提出
 ## 需求軟體
 ---
-- Python 3
+- [labelImg](https://github.com/tzutalin/labelImg)
 - opencv2
 - labelImg
 
@@ -156,6 +156,26 @@ python3 merge.py --source_path [SOURCE_PATH] --labels_path [LABELS_PATH]
 ![](./figs/exampleLabels9.png)
 
 ### 整體上還是看自己評估不用想太多有問題群組直接問
+
+-----------------
+
+## 蒐集資料
+
+### 需求軟體
+- ffmpeg
+
+### 對RTSP camera 使用錄影
+
+可將 `rtsp://192.168.100.10/h264/ch1/main/av_stream` 改成目的的RTSP source
+
+```bash
+$ bash record_rtsp_camera.sh rtsp://192.168.100.10/h264/ch1/main/av_stream
+```
+
+預設每10分鍾存一部影片
+
+- [參考資料1](https://stackoverflow.com/questions/16259588/how-to-dump-raw-rtsp-stream-to-file)
+- [參考資料2](https://superuser.com/questions/1422404/ffmpeg-segmenting-a-continuous-live-stream-into-one-minute-stand-alone-files)
 
 #### DEMO 可用
  - 清澈
